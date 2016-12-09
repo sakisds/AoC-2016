@@ -1,4 +1,4 @@
-### Day 9 - Problem 1
+### Day 8 - Problem 1
 ## Two-Factor Authentication
 ## Authors: Thanasis Georgiou, Marina Grigoropoulou
 
@@ -32,7 +32,7 @@ end
 # Parse input
 for line in input
     str = split(line, ' ')
-    
+
     # Determine command
     if str[1] == "rect"
         coords = split(str[2], 'x')
@@ -42,7 +42,7 @@ for line in input
     elseif str[1] == "rotate"
         Δ = parse(Int, str[end])
         l = parse(Int, str[3][3:end]) + 1
-        
+
         if str[2] == "row"
             rotateRow(l, Δ)
         else
